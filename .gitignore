@@ -24,5 +24,6 @@ yarn-error.log*
 
 
 #pyc
+API/__pycache__/
 __pycache__/
 *.pyc
