@@ -1,6 +1,6 @@
 INSERT INTO Agents (
     Name, Faction, Attribute, Specialty, Rarity,
-    WeaponType, Skills, Description, ImageURL
+    WeaponType, Skills, Description, ImageURL, HP, ATK, DEF
 )
 VALUES (
     N'Anby Demara',
@@ -11,5 +11,13 @@ VALUES (
     N'Bat',
     N'["Basic Attack: Basic Strike", "Special Attack: Volt Assault", "EX Special Attack: Thunderclap"]',
     N'A member of the Cunning Hares, a calm and quiet fighter who channels electricity through her bat to crush enemies.',
-    N'https://static.wikia.nocookie.net/zenless-zone-zero/images/Anby.png'
+    N'https://static.wikia.nocookie.net/zenless-zone-zero/images/Anby.png',
+    603,
+    95,
+    49
 );
+
+SELECT * FROM Agents
+
+UPDATE Agents
+SET HP = 'Stun'
